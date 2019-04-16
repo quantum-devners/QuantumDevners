@@ -3469,7 +3469,8 @@ h6 {
 .single_portfolio:hover .overlay {
     top: 20px;
     left: 20px;
-    background: rgba(19, 69, 230, 0.9)
+    /*background: rgba(19, 69, 230, 0.9)*/
+    background: rgba(128, 52, 195, 0.92);
 }
 
 .single_portfolio:hover .short_info {
