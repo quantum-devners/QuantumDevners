@@ -70,7 +70,14 @@
     padding-bottom: 130px;
 }
 
-
+.customMap {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    right: -10%;
+    top: 12%;
+    height: 100%;
+}
 
 
 
