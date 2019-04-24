@@ -153,7 +153,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: linear-gradient(58deg, #1345e6, #ed239f);
+        background: linear-gradient(58deg, #ed239f, #1345e6);
         background-size: 400% 400%;
 
         -webkit-animation: AnimationName 52s ease infinite;
