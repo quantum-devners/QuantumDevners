@@ -20,9 +20,30 @@
 
 	<!-- our css -->
 	<link rel="stylesheet" href="css/ourStyle.css">
+
+	<style type="text/css">
+				#preloader {
+position: fixed;
+left: 0;
+top: 0;
+z-index: 999;
+width: 100%;
+height: 100%;
+overflow: visible;
+background: #000000 url('loading (1).gif') no-repeat center center;
+}
+
+	</style>
+
 </head>
 
 <body>
+
+<div id="preloader">
+	<center>
+	<img src="">
+	</center>
+</div>
 
 	<!--================ Start Header Area =================-->
 	<header class="header_area">
@@ -637,6 +658,7 @@ Copyright &copy; <script> document.write(new Date().getFullYear());</script> All
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="jquery.min.js"></script>
 	<script src="js/popper.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/stellar.js"></script>
@@ -649,6 +671,17 @@ Copyright &copy; <script> document.write(new Date().getFullYear());</script> All
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="js/gmaps.min.js"></script>
 	<script src="js/theme.js"></script>
+
+<script>
+jQuery(document).ready(function($) {
+$(window).load(function(){
+$('#preloader').fadeOut('slow',function(){$(this).remove();});
+});
+});
+</script>
+
+<!-- End of Splash Screen Coding -->
+
 </body>
 
 </html>
