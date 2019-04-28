@@ -18,10 +18,27 @@
 	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/customStyle.css">
 </head>
 
-<body>
-
+<body class="stop-scrolling">
+		<div class="preloaderContainer" id="preloader">
+		
+		<svg>
+	  <g>
+	    <path d="M 50,100 A 1,1 0 0 1 50,0"/>
+	  </g>
+	  <g>
+	    <path d="M 50,75 A 1,1 0 0 0 50,-25"/>
+	  </g>
+	  <defs>
+	    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+	      <stop offset="0%" style="stop-color:#fff;stop-opacity:1" />
+	      <stop offset="100%" style="stop-color:#fff;stop-opacity:1" />
+	    </linearGradient>
+	  </defs>
+	</svg>
+	</div>
 	<!--================ Start Header Area =================-->
 	<header class="header_area header_inner_page">
 		<div class="main_menu">
@@ -42,7 +59,16 @@
 							<li class="nav-item "><a class="nav-link" href="index.html">Home</a></li>
 							<li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
 							<li class="nav-item"><a class="nav-link" href="services.html">Our Services</a></li>
-							<li class="nav-item active"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+							<li class="nav-item submenu dropdown active">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								 aria-expanded="false">Portfolio</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="portfolio.html">All Portfolio's</a></li>
+									<li class="nav-item "><a class="nav-link" href="frontEndDevelopment.html">Front End Development</a></li>
+									<li class="nav-item"><a class="nav-link" href="graphics.html">Graphics Designs</a></li>
+									<li class="nav-item"><a class="nav-link" href="apps&Games.html">Apps & Game Designs</a></li>
+								</ul>
+							</li>
 							<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
 							<li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
 						</ul>
@@ -58,10 +84,10 @@
       <div class="banner_inner d-flex align-items-center">
           <div class="container">
               <div class="banner_content text-center">
-                  <h2>Portfolio</h2>
+                  <h2>All Portfolio's</h2>
                   <div class="page_link">
                       <a href="index.html">Home</a>
-                      <a href="portfolio.html">Portfolio</a>
+                      <a href="portfolio.html">All Portfolio's</a>
                   </div>
               </div>
           </div>
@@ -70,7 +96,7 @@
   <!--================ End Banner Area =================-->
 
 
-  <!--================ Start Portfolio Area =================-->
+	<!--================ Start Portfolio Area =================-->
 	<section class="portfolio_area section-margin pb-0" id="portfolio">
 		<div class="container">
 			<div class="row">
@@ -86,83 +112,923 @@
 			<div class="filters portfolio-filter">
 				<ul>
 					<li class="active" data-filter="*">all</li>
-					<li data-filter=".popular">popular</li>
-					<li data-filter=".latest"> latest</li>
-					<li data-filter=".following">following</li>
-					<li data-filter=".upcoming">upcoming</li>
+					<li data-filter=".frontEnd">Front End Developments</li>
+					<li data-filter=".graphics"> Graphics</li>
+					<li data-filter=".apps">Mobile Apps & Game Designs</li>
+					<li data-filter=".seo">SEO</li>
 				</ul>
 			</div>
 
 			<div class="filters-content">
 				<div class="row portfolio-grid">
 					<div class="grid-sizer col-md-3 col-lg-3"></div>
-					<div class="col-lg-6 col-md-6 all following">
+
+					<div class="col-lg-6 col-md-6 all frontEnd">
 						<div class="single_portfolio">
-							<img class="img-fluid w-100" src="img/portfolio/p1.jpg" alt="">
+							<img class="img-fluid w-100" src="img/portfolio/web/nerdpaper-0.jpg" alt="">
 							<div class="overlay"></div>
 							<div class="short_info">
-								<h4><a href="portfolio-details.html">Lens Mockup Design</a></h4>
-								<p>Art, Illustration</p>
+								<h4><a href="portfolio-details.html">Visit NerdPaper Website</a></h4>
+								<p>Our Website Designing</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/Road Stoves.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Logo For Road Stoves Variation # 1</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/citzen.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Logo For CitZen</a></h4>
+								<p>Our Logo Designing</p>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-lg-6 col-md-6 all latest popular upcoming">
+					<div class="col-lg-6 col-md-6 all frontEnd">
 						<div class="single_portfolio">
-							<img class="img-fluid w-100" src="img/portfolio/p4.jpg" alt="">
+							<img class="img-fluid w-100" src="img/portfolio/web/baksho-0.jpg" alt="">
 							<div class="overlay"></div>
 							<div class="short_info">
-								<h4><a href="portfolio-details.html">Lens Mockup Design</a></h4>
-								<p>Art, Illustration</p>
+								<h4><a href="portfolio-details.html">Visit Baksho Website</a></h4>
+								<p>Our Website Designing</p>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-lg-3 col-md-6 all latest following">
+					<div class="col-lg-6 col-md-6 all frontEnd">
 						<div class="single_portfolio">
-							<img class="img-fluid w-100" src="img/portfolio/p2.jpg" alt="">
+							<img class="img-fluid w-100" src="img/portfolio/web/epsilon-0.jpg" alt="">
 							<div class="overlay"></div>
 							<div class="short_info">
-								<h4><a href="portfolio-details.html">Lens Mockup Design</a></h4>
-								<p>Art, Illustration</p>
+								<h4><a href="portfolio-details.html">Visit Epsilon Website</a></h4>
+								<p>Our Website Designing</p>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-lg-3 col-md-6 all latest upcoming">
+					<div class="col-lg-6 col-md-6 all graphics">
 						<div class="single_portfolio">
-							<img class="img-fluid w-100" src="img/portfolio/p3.jpg" alt="">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/goChem1.jpg" alt="">
 							<div class="overlay"></div>
 							<div class="short_info">
-								<h4><a href="portfolio-details.html">Lens Mockup Design</a></h4>
-								<p>Art, Illustration</p>
+								<h4><a href="portfolio-details.html">GoChem Logo Variation # 1</a></h4>
+								<p>Our Logo Designing</p>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-lg-6 col-md-6 all popular">
+						<div class="col-lg-6 col-md-6 all graphics">
 						<div class="single_portfolio">
-							<img class="img-fluid w-100" src="img/portfolio/p6.jpg" alt="">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/goChem2.jpg" alt="">
 							<div class="overlay"></div>
 							<div class="short_info">
-								<h4><a href="portfolio-details.html">Lens Mockup Design</a></h4>
-								<p>Art, Illustration</p>
+								<h4><a href="portfolio-details.html">GoChem Logo Variation # 2</a></h4>
+								<p>Our Logo Designing</p>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-lg-6 col-md-6 all popular latest following">
+					<div class="col-lg-6 col-md-6 all frontEnd">
 						<div class="single_portfolio">
-							<img class="img-fluid w-100" src="img/portfolio/p5.jpg" alt="">
+							<img class="img-fluid w-100" src="img/portfolio/web/falcon-0.jpg" alt="">
 							<div class="overlay"></div>
 							<div class="short_info">
-								<h4><a href="portfolio-details.html">Lens Mockup Design</a></h4>
-								<p>Art, Illustration</p>
+								<h4><a href="portfolio-details.html">Visit Falcon Investigation Website</a></h4>
+								<p>Our Website Designing</p>
 							</div>
 						</div>
 					</div>
+
+
+
+					<div class="col-lg-6 col-md-6 all frontEnd">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/web/gochem-0.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Visit GoChem Website</a></h4>
+								<p>Our Website Designing</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/baksho1.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Baksho Logo Variation # 1</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/baksho2.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Baksho Logo Variation # 2</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all frontEnd">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/web/ittoday-0.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Visit IT-Today Website</a></h4>
+								<p>Our Website Designing</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6 col-md-6 all frontEnd">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/web/myprowords-0.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Visit MyProWords Website</a></h4>
+								<p>Our Website Designing</p>
+							</div>
+						</div>
+					</div>
+
+
+
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/HRDN.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Logo Design For HRDN</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+
+				
+
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/KM-02.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Khatta Meetha Baksho Logo Variation # 2</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/KM-01.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Khatta Meetha Baksho Logo Variation # 1</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>		
+
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/KM-03.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Khatta Meetha Baksho Logo Variation # 3</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6 col-md-6 all latest frontEnd">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/web/pardon-0.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Visit Pardon Website</a></h4>
+								<p>Our Website Designing</p>
+							</div>
+						</div>
+					</div>		
+
+					<div class="col-lg-6 col-md-6 all frontEnd">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/web/roadstoves-0.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Visit RoadStoves Website</a></h4>
+								<p>Our Website Designing</p>
+							</div>
+						</div>
+					</div>
+					
+
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/limeGameStudio.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Logo Design For Lime Game Studio</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+			
+
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/hkq.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Logo Design For HKQ Photography</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all frontEnd">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/web/roots-0.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Visit Roots Builders Website</a></h4>
+								<p>Our Website Designing</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all frontEnd">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/web/sq1condo-0.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Visit SQ1 Condo Website</a></h4>
+								<p>Our Website Designing</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/nerdLogo1.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Logo Design For NerdPapers Variation # 2</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/nerdLogo2.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Logo Design For NerdPapers Variation # 1</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all frontEnd">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/web/startem-0.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Visit Startem Website</a></h4>
+								<p>Our Website Designing</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all frontEnd">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/web/tripplanner-0.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Visit Tripplanner Website</a></h4>
+								<p>Our Website Designing</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/pardon1.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Logo Design For Pardon Precise Variation # 1</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/pardon2.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Logo Design For Pardon Precise Variation # 2</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all frontEnd">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/web/vease-0.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Visit Vease Website</a></h4>
+								<p>Our Website Designing</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all frontEnd">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/web/winningsolutions-0.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Visit Winning Solutions Website</a></h4>
+								<p>Our Website Designing</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/roadStove1.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Logo Design For Road Stoves Variation # 2</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/roadStove2.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Logo Design For Road Stoves Variation # 3</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/moiz.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Logo Design For Moiz</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/sq1.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Logo Design For SQ1 Condo Variation # 1</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/sq2.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Logo Design For SQ1 Condo Variation # 2</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/startemLogo1.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Logo Design For Startem Variation # 1</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/startemLogo2.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Logo Design For Startem Variation # 2</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/startemLogo3.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Logo Design For Startem Variation # 3</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/winSol1.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Logo Design For Winning Solutions Variation # 1</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/winSol2.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Logo Design For Winning Solutions Variation # 2</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/Garage Logo 1.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Logo Design For AZ Garage Variation # 1</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/Garage Logo 2.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Logo Design For AZ Garage Variation # 2</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+
+						<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/rootsBuilder1.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Logo Design For Roots Builders Variation # 1</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/rootsBuilder2.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Logo Design For Roots Builders Variation # 2</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/itToday.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Logo Design For IT-Today</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/ajmi1.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Logo Design For AJMIDN Variation # 1</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+
+		
+					<div class="col-lg-6 col-md-6 all graphics">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/graphics/ajmi2.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Logo Design For AJMIDN Variation # 2</a></h4>
+								<p>Our Logo Designing</p>
+							</div>
+						</div>
+					</div>
+
+
+
+					<div class="col-lg-6 col-md-6 all apps">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/apps/FoodApp Designs/Design 1/1.png" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Design For Food App Scrn # 1</a></h4>
+								<p>Our Apps & Game Designings</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all apps">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/apps/FoodApp Designs/Design 1/2.png" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Design For Food App Scrn # 2</a></h4>
+								<p>Our Apps & Game Designings</p>
+							</div>
+						</div>
+					</div>
+
+
+					
+					<div class="col-lg-6 col-md-6 all apps">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/apps/FoodApp Designs/Design 1/3.png" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Design For Food App Scrn # 3</a></h4>
+								<p>Our Apps & Game Designings</p>
+							</div>
+						</div>
+					</div>
+
+
+					
+					<div class="col-lg-6 col-md-6 all apps">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/apps/FoodApp Designs/Design 1/4.png" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Design For Food App Scrn # 4</a></h4>
+								<p>Our Apps & Game Designings</p>
+							</div>
+						</div>
+					</div>
+
+
+					
+					<div class="col-lg-6 col-md-6 all apps">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/apps/FoodApp Designs/Design 1/5.png" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Design For Food App Scrn # 5</a></h4>
+								<p>Our Apps & Game Designings</p>
+							</div>
+						</div>
+					</div>
+
+
+					
+					<div class="col-lg-6 col-md-6 all apps">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/apps/FoodApp Designs/Design 1/6.png" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Design For Food App Scrn # 6</a></h4>
+								<p>Our Apps & Game Designings</p>
+							</div>
+						</div>
+					</div>
+
+
+					
+					<div class="col-lg-6 col-md-6 all apps">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/apps/FoodApp Designs/Design 1/7.png" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Design For Food App Scrn # 7</a></h4>
+								<p>Our Apps & Game Designings</p>
+							</div>
+						</div>
+					</div>
+
+
+					
+					<div class="col-lg-6 col-md-6 all apps">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/apps/FoodApp Designs/Design 1/8.png" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Design For Food App Scrn # 8</a></h4>
+								<p>Our Apps & Game Designings</p>
+							</div>
+						</div>
+					</div>
+
+
+					
+					<div class="col-lg-6 col-md-6 all apps">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/apps/FoodApp Designs/Design 2/1-Splash-Screen.png" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Design 2 For Food App Scrn # 1</a></h4>
+								<p>Our Apps & Game Designings</p>
+							</div>
+						</div>
+					</div>
+
+
+					
+					<div class="col-lg-6 col-md-6 all apps">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/apps/FoodApp Designs/Design 2/2-University-Screen.png" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Design 2 For Food App Scrn # 2</a></h4>
+								<p>Our Apps & Game Designings</p>
+							</div>
+						</div>
+					</div>
+
+
+					
+					<div class="col-lg-6 col-md-6 all apps">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/apps/FoodApp Designs/Design 2/3-Cafe-Screen.png" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Design 2 For Food App Scrn # 3</a></h4>
+								<p>Our Apps & Game Designings</p>
+							</div>
+						</div>
+					</div>
+
+
+					
+					<div class="col-lg-6 col-md-6 all apps">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/apps/FoodApp Designs/Design 2/4-Menu-Selection.png" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Design 2 For Food App Scrn # 4</a></h4>
+								<p>Our Apps & Game Designings</p>
+							</div>
+						</div>
+					</div>
+
+
+					
+					<div class="col-lg-6 col-md-6 all apps">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/apps/FoodApp Designs/Design 2/5-Item-Listings.png" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Design 2 For Food App Scrn # 5</a></h4>
+								<p>Our Apps & Game Designings</p>
+							</div>
+						</div>
+					</div>
+
+
+					
+					<div class="col-lg-6 col-md-6 all apps">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/apps/FoodApp Designs/Design 2/6-Item-Listings.png" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Design 2 For Food App Scrn # 6</a></h4>
+								<p>Our Apps & Game Designings</p>
+							</div>
+						</div>
+					</div>
+
+
+					
+					<div class="col-lg-6 col-md-6 all apps">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/apps/FoodApp Designs/Design 2/7-Order-Summary.png" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Design 2 For Food App Scrn # 7</a></h4>
+								<p>Our Apps & Game Designings</p>
+							</div>
+						</div>
+					</div>
+
+
+
+					
+					<div class="col-lg-6 col-md-6 all apps">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/apps/FoodApp Designs/Design 2/9-Side-Orders.png" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Design 2 For Food App Scrn # 8</a></h4>
+								<p>Our Apps & Game Designings/p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all apps">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/apps/QiblaNamazApp/1Qibla&Namaz - Screen 1.png" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Design For Qiblaa & Namaz App Scrn # 1</a></h4>
+								<p>Our Apps & Game Designings</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all apps">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/apps/QiblaNamazApp/1Qibla&Namaz - Screen 2 Compass.png" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Design For Qiblaa & Namaz App Scrn # 2</a></h4>
+								<p>Our Apps & Game Designings</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all apps">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/apps/QiblaNamazApp/Sidebar Hamburger.png" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Design For Qiblaa & Namaz App Scrn # 3</a></h4>
+								<p>Our Apps & Game Designings</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all apps">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/apps/Services App/ServicesAppMainScreen.png" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Design For Services App Scrn # 1</a></h4>
+								<p>Our Apps & Game Designings</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all apps">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/apps/Services App/Sidebar Hamburger With Splash 884.png" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Design For Services App Scrn # 2</a></h4>
+								<p>Our Apps & Game Designings</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all apps">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/apps/Services App/Icon Selection Screen 2 Final.png" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Design For Services App Scrn # 3</a></h4>
+								<p>Our Apps & Game Designings</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6 col-md-6 all apps">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/apps/Sweet'sSmash/Sweet's Smash Main Menu Final Look.png" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Design For Sweet's Smash Game</a></h4>
+								<p>Our Apps & Game Designings</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6 col-md-6 all apps">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/apps/Sweet'sSmash/Sweet'sSmash_FeaturedImage.png" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Design For Sweet's Smash Game</a></h4>
+								<p>Our Apps & Game Designings</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 all apps">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/apps/featured Image.png" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Design For Magician's World Game</a></h4>
+								<p>Our Apps & Game Designings</p>
+							</div>
+						</div>
+					</div>
+
+
+					
+					<div class="col-lg-6 col-md-6 all apps">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/apps/FinishedLookSummersWorldMenuFirstOption.png" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Design For Summer World Game</a></h4>
+								<p>Our Apps & Game Designings</p>
+							</div>
+						</div>
+					</div>
+
+
+					
+					<div class="col-lg-6 col-md-6 all apps">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="img/portfolio/apps/MenuTastyMeals.png" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Design For Tasty Meals Game</a></h4>
+								<p>Our Apps & Game Designings</p>
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+
+					<!--=================================-->
 
 				</div>
+				
 			</div>
 		</div>
 	</section>
@@ -280,6 +1146,31 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="js/gmaps.min.js"></script>
 	<script src="js/theme.js"></script>
+
+	<!-- Start of Preloader Screen Coding -->
+
+<script src="js/jquery.min.js"></script>
+<script>
+jQuery(document).ready(function($) {
+
+$(window).load(function(){
+	$('#preloader').fadeOut('slow', function() {
+		$(this).remove();
+	});
+});
+
+$(window).on('load', function() {    
+    	$('body').removeClass('stop-scrolling');
+	});	
+});
+
+
+
+</script>
+
+<!-- End of Preloader Screen Coding -->
+
+
 </body>
 
 </html>

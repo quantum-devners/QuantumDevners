@@ -70,7 +70,14 @@
     padding-bottom: 130px;
 }
 
-
+.customMap {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    right: -10%;
+    top: 12%;
+    height: 100%;
+}
 
 
 
@@ -131,3 +138,100 @@
 }
 
 }
+
+
+/*--------------- preloader css start ------------------*/
+    .preloaderContainer {
+        position: absolute;
+        right: 0px;
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
+        z-index: 9999999;
+        width: 100% !important;
+        height: 100% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(58deg, #ed239f, #1345e6);
+        background-size: 400% 400%;
+
+        -webkit-animation: AnimationName 52s ease infinite;
+        -moz-animation: AnimationName 52s ease infinite;
+        animation: AnimationName 52s ease infinite;
+
+    @-webkit-keyframes AnimationName {
+        0%{background-position:69% 0%}
+        50%{background-position:32% 100%}
+        100%{background-position:69% 0%}
+    }
+
+
+    }
+
+        @-moz-keyframes AnimationName {
+        0%{background-position:69% 0%}
+        50%{background-position:32% 100%}
+        100%{background-position:69% 0%}
+    }
+    @keyframes AnimationName { 
+        0%{background-position:69% 0%}
+        50%{background-position:32% 100%}
+        100%{background-position:69% 0%}
+    }
+
+    .stop-scrolling {
+          height: 100%;
+          overflow: hidden;
+        }
+
+    svg {
+      overflow: visible;
+      width: 100px;
+      height: 150px;
+    }
+    svg g {
+      animation: slide 2s linear infinite;
+    }
+    svg g:nth-child(2) {
+      animation-delay: 0.5s;
+    }
+    svg g:nth-child(2) path {
+      animation-delay: 0.5s;
+      stroke-dasharray: 0px 158px;
+      stroke-dashoffset: 1px;
+    }
+    svg path {
+      stroke: url(#gradient);
+      stroke-width: 20px;
+      stroke-linecap: round;
+      fill: none;
+      stroke-dasharray: 0 157px;
+      stroke-dashoffset: 0;
+      animation: escalade 2s cubic-bezier(0.8, 0, 0.2, 1) infinite;
+    }
+
+    @keyframes slide {
+      0% {
+        transform: translateY(-50px);
+      }
+      100% {
+        transform: translateY(50px);
+      }
+    }
+    @keyframes escalade {
+      0% {
+        stroke-dasharray: 0 157px;
+        stroke-dashoffset: 0;
+      }
+      50% {
+        stroke-dasharray: 156px 157px;
+        stroke-dashoffset: 0;
+      }
+      100% {
+        stroke-dasharray: 156px 157px;
+        stroke-dashoffset: -156px;
+      }
+    }
+
+/*--------------- preloader css end ------------------*/
