@@ -1,5 +1,9 @@
+.logoContainerCustomWidth {
+	width: 250px;
+}
+
 .img-size {
-    width: 50%;
+    width: 72%;
 }
 
 /* Footer Branding Text */

@@ -80,15 +80,24 @@
 }
 
 
+.logoContainerCustomWidth {
+    width: 250px;
+}
+.img-size {
+    width: 72%;
+}
 
-
+/* Footer Branding Text */
+.footer_area .footer_bottom a {
+    color: #02bfdd;
+}
 
 
 
 
 
 @media only screen and (max-width: 768px) {
-    .about_area .about_img {
+.about_area .about_img {
     display: block !important;
 }
   .marketingImg {
@@ -98,6 +107,10 @@
     pointer-events: none;
 }
  
+.custom_mrgnlft150 {
+    margin-left: 0px !important;
+}
+
 .webdevImg {
     width: 100% !important;
     height: auto;
@@ -138,6 +151,8 @@
 }
 
 }
+
+
 
 
 /*--------------- preloader css start ------------------*/
