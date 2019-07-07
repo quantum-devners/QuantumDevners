@@ -1,3 +1,14 @@
+::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: #8034c3;
+}
+
+::selection {
+  color: #fff; 
+  background: #8034c3;
+}
+
+
 .custom_mrgnlft150 {
 	margin-left: 150px;
 }
@@ -79,6 +90,9 @@
     height: 100%;
 }
 
+.textJustify {
+    text-align: justify;
+}
 
 .logoContainerCustomWidth {
     width: 250px;
