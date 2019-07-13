@@ -8,6 +8,29 @@
   background: #8034c3;
 }
 
+.single_portfolio img {
+  box-shadow: 0px 0px 20px -9px #777777 !important;
+}
+
+.service_item {
+  box-shadow: 0px 0px 20px -9px #777777 !important;
+}
+
+.single-blog {
+  box-shadow: 0px 0px 20px -9px #777777 !important;
+}
+
+.primary_btn {
+  box-shadow: 0px 0px 20px -9px #777777 !important;
+}
+
+input {
+      box-shadow: 0px 0px 15px -9px #777777 !important;
+}
+
+textarea {
+      box-shadow: 0px 0px 15px -9px #777777 !important;
+}
 
 .custom_mrgnlft150 {
 	margin-left: 150px;
